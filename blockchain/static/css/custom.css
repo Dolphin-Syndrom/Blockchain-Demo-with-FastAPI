@@ -1,0 +1,391 @@
+/* Dark Mode Theme */
+:root {
+    --bg-primary: #121212;
+    --bg-secondary: #1e1e1e;
+    --bg-tertiary: #2d2d2d;
+    --text-primary: #ffffff;
+    --text-secondary: #b3b3b3;
+    --accent-primary: #bb86fc;
+    --accent-secondary: #03dac6;
+    --border-color: #3a3a3a;
+    --success-color: #4caf50;
+    --warning-color: #ff9800;
+    --danger-color: #f44336;
+    --info-color: #2196f3;
+}
+
+body {
+    padding-top: 60px;
+    background-color: var(--bg-primary) !important;
+    color: var(--text-primary) !important;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Navigation */
+.navbar-dark {
+    background-color: var(--bg-secondary) !important;
+    border-bottom: 1px solid var(--border-color);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.navbar-brand {
+    color: var(--accent-primary) !important;
+    font-weight: 600;
+}
+
+.nav-link {
+    color: var(--text-secondary) !important;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover, .nav-link.active {
+    color: var(--accent-secondary) !important;
+}
+
+/* Cards and Containers */
+.container {
+    background-color: transparent;
+}
+
+.card {
+    background-color: var(--bg-secondary) !important;
+    border: 1px solid var(--border-color) !important;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    margin-bottom: 2rem;
+}
+
+.card-body {
+    background-color: var(--bg-secondary);
+    color: var(--text-primary);
+    padding: 2rem;
+}
+
+.card-title {
+    color: var(--accent-primary) !important;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+/* Buttons */
+.btn-primary {
+    background-color: var(--accent-primary) !important;
+    border-color: var(--accent-primary) !important;
+    color: #000 !important;
+    font-weight: 500;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #9c6dd1 !important;
+    border-color: #9c6dd1 !important;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(187, 134, 252, 0.3);
+}
+
+.btn-success {
+    background-color: var(--success-color) !important;
+    border-color: var(--success-color) !important;
+    border-radius: 8px;
+}
+
+.btn-danger {
+    background-color: var(--danger-color) !important;
+    border-color: var(--danger-color) !important;
+    border-radius: 8px;
+}
+
+.btn-sq-xs {
+    border-radius: 50% !important;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Tables */
+.table {
+    background-color: var(--bg-secondary) !important;
+    color: var(--text-primary) !important;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.table thead th {
+    background-color: var(--bg-tertiary) !important;
+    color: var(--accent-primary) !important;
+    border-color: var(--border-color) !important;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    letter-spacing: 0.5px;
+}
+
+.table td, .table th {
+    border-color: var(--border-color) !important;
+    padding: 1rem 0.75rem;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: rgba(255, 255, 255, 0.05) !important;
+}
+
+.table tbody tr:hover {
+    background-color: rgba(187, 134, 252, 0.1) !important;
+}
+
+/* Forms */
+.form-control {
+    background-color: var(--bg-tertiary) !important;
+    border: 1px solid var(--border-color) !important;
+    color: var(--text-primary) !important;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.form-control:focus {
+    background-color: var(--bg-tertiary) !important;
+    border-color: var(--accent-primary) !important;
+    color: var(--text-primary) !important;
+    box-shadow: 0 0 0 0.2rem rgba(187, 134, 252, 0.25) !important;
+}
+
+.form-control::placeholder {
+    color: var(--text-secondary);
+}
+
+/* Alerts */
+.alert {
+    border-radius: 12px;
+    border: none;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.alert-secondary {
+    background-color: var(--bg-secondary) !important;
+    color: var(--text-primary) !important;
+    border: 1px solid var(--border-color) !important;
+}
+
+.alert-success {
+    background-color: rgba(76, 175, 80, 0.1) !important;
+    color: var(--success-color) !important;
+    border: 1px solid var(--success-color) !important;
+}
+
+.alert-danger {
+    background-color: rgba(244, 67, 54, 0.1) !important;
+    color: var(--danger-color) !important;
+    border: 1px solid var(--danger-color) !important;
+}
+
+/* Modals */
+.modal-content {
+    background-color: var(--bg-secondary) !important;
+    border: 1px solid var(--border-color) !important;
+    border-radius: 12px;
+    color: var(--text-primary) !important;
+}
+
+.modal-header {
+    border-bottom: 1px solid var(--border-color) !important;
+    background-color: var(--bg-tertiary);
+}
+
+.modal-footer {
+    border-top: 1px solid var(--border-color) !important;
+    background-color: var(--bg-tertiary);
+}
+
+/* DataTables */
+.dataTables_wrapper {
+    color: var(--text-primary) !important;
+}
+
+.dataTables_wrapper .dataTables_length,
+.dataTables_wrapper .dataTables_filter,
+.dataTables_wrapper .dataTables_info,
+.dataTables_wrapper .dataTables_processing,
+.dataTables_wrapper .dataTables_paginate {
+    color: var(--text-primary) !important;
+}
+
+.dataTables_filter input {
+    background-color: var(--bg-tertiary) !important;
+    border: 1px solid var(--border-color) !important;
+    color: var(--text-primary) !important;
+    border-radius: 8px;
+}
+
+.dataTables_length select {
+    background-color: var(--bg-tertiary) !important;
+    border: 1px solid var(--border-color) !important;
+    color: var(--text-primary) !important;
+    border-radius: 8px;
+}
+
+.dataTables_info {
+    color: var(--text-secondary) !important;
+}
+
+.paginate_button {
+    background-color: var(--bg-tertiary) !important;
+    border: 1px solid var(--border-color) !important;
+    color: var(--text-primary) !important;
+}
+
+.paginate_button:hover {
+    background-color: var(--accent-primary) !important;
+    color: #000 !important;
+}
+
+.paginate_button.current {
+    background-color: var(--accent-primary) !important;
+    color: #000 !important;
+}
+
+/* Fix DataTables specific overrides */
+.dataTable {
+    background-color: var(--bg-secondary) !important;
+}
+
+.dataTable thead {
+    background-color: var(--bg-tertiary) !important;
+}
+
+.dataTable thead th {
+    background-color: var(--bg-tertiary) !important;
+    color: var(--accent-primary) !important;
+    border-bottom: 2px solid var(--border-color) !important;
+}
+
+.dataTable tbody tr {
+    background-color: var(--bg-secondary) !important;
+}
+
+.dataTable tbody tr:nth-child(odd) {
+    background-color: rgba(255, 255, 255, 0.03) !important;
+}
+
+.dataTable tbody tr:nth-child(even) {
+    background-color: var(--bg-secondary) !important;
+}
+
+.dataTable tbody tr:hover {
+    background-color: rgba(187, 134, 252, 0.15) !important;
+}
+
+.dataTable tbody td {
+    background-color: transparent !important;
+    color: var(--text-primary) !important;
+    border-color: var(--border-color) !important;
+}
+
+/* Custom improvements */
+.section-header {
+    background: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.status-badge {
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.status-pending {
+    background-color: rgba(255, 152, 0, 0.2);
+    color: var(--warning-color);
+    border: 1px solid var(--warning-color);
+}
+
+.status-confirmed {
+    background-color: rgba(76, 175, 80, 0.2);
+    color: var(--success-color);
+    border: 1px solid var(--success-color);
+}
+
+/* Loading states */
+.loading {
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+/* Responsive improvements */
+@media (max-width: 768px) {
+    .container {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    
+    .card-body {
+        padding: 1rem;
+    }
+    
+    .section-header {
+        font-size: 1.5rem;
+    }
+}
+
+/* Additional DataTables overrides to ensure dark theme */
+.dataTable,
+.dataTable tr,
+.dataTable td,
+.dataTable th {
+    background-color: transparent !important;
+}
+
+.dataTable tbody tr.odd {
+    background-color: rgba(255, 255, 255, 0.03) !important;
+}
+
+.dataTable tbody tr.even {
+    background-color: var(--bg-secondary) !important;
+}
+
+.dataTable tbody tr:hover,
+.dataTable tbody tr.odd:hover,
+.dataTable tbody tr.even:hover {
+    background-color: rgba(187, 134, 252, 0.15) !important;
+}
+
+/* Force override any DataTables plugin white backgrounds */
+.dataTables_wrapper table.dataTable tbody tr,
+.dataTables_wrapper table.dataTable tbody tr.odd,
+.dataTables_wrapper table.dataTable tbody tr.even {
+    background-color: var(--bg-secondary) !important;
+}
+
+.dataTables_wrapper table.dataTable tbody tr:hover,
+.dataTables_wrapper table.dataTable tbody tr.odd:hover,
+.dataTables_wrapper table.dataTable tbody tr.even:hover {
+    background-color: rgba(187, 134, 252, 0.15) !important;
+}
+
+.dataTables_wrapper table.dataTable tbody tr td,
+.dataTables_wrapper table.dataTable tbody tr.odd td,
+.dataTables_wrapper table.dataTable tbody tr.even td {
+    background-color: transparent !important;
+    color: var(--text-primary) !important;
+}
+
+.dataTables_wrapper table.dataTable tbody tr:hover td,
+.dataTables_wrapper table.dataTable tbody tr.odd:hover td,
+.dataTables_wrapper table.dataTable tbody tr.even:hover td {
+    background-color: transparent !important;
+    color: var(--text-primary) !important;
+}
